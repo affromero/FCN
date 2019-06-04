@@ -1,4 +1,4 @@
-# Pytorch - fcn
+# Pytorch - FCN
 
 PyTorch implementation of [Fully Convolutional Networks](https://github.com/shelhamer/fcn.berkeleyvision.org) including VGG and RESNET backbones.
 
@@ -7,7 +7,7 @@ PyTorch implementation of [Fully Convolutional Networks](https://github.com/shel
 
 - [pytorch](https://github.com/pytorch/pytorch) >= 1.1.0
 - [torchvision](https://github.com/pytorch/vision) >= 0.3.0
-- [fcn](https://github.com/wkentaro/fcn) >= 6.1.5
+- [fcn](https://github.com/wkentaro/fcn)
 - [Pillow](https://github.com/python-pillow/Pillow)
 - [tqdm](https://github.com/tqdm/tqdm)
 
@@ -20,4 +20,4 @@ PyTorch implementation of [Fully Convolutional Networks](https://github.com/shel
 - mode = train, val, demo.
 
 ### Acknowledgement
-This repo is inspired in the [wkentaro](https://github.com/wkentaro/pytorch-fcn/blob/master/README.md)'s repo and some snippets are a copy of it. 
+This repo is built upon [wkentaro](https://github.com/wkentaro/pytorch-fcn)'s repo and some snippets are a copy of it. 
