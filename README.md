@@ -1,6 +1,6 @@
-# Pytorch - FCN
+# FCN
 
-PyTorch implementation of [Fully Convolutional Networks](https://github.com/shelhamer/fcn.berkeleyvision.org) including VGG and RESNET backbones.
+PyTorch implementation of [Fully Convolutional Networks](https://github.com/shelhamer/fcn.berkeleyvision.org), for VGG and RESNET backbones.
 
 
 ## Requirements
