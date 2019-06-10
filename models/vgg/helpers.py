@@ -65,8 +65,6 @@ def get_parameters(model, bias=False):
         elif isinstance(m, modules_skipped) or idx == 0:
             continue
         else:
-            import ipdb
-            ipdb.set_trace()
             raise ValueError('Unexpected module: %s' % str(m))
 
 
