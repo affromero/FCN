@@ -14,7 +14,7 @@ PyTorch implementation of [Fully Convolutional Networks](https://github.com/shel
 `pip install -r requirements.txt`
 
 ## Data
-`sh download.sh` will download the PascalVOC dataset inside **data** folder. 
+`sh download_dataset.sh` will download the PascalVOC dataset inside **data** folder. 
 
 ## Training
 
