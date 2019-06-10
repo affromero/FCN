@@ -233,6 +233,8 @@ class FCN(nn.Module):
         import torch
         if test and not file:
             file = 'data/pretrained_models/fcn32s_from_caffe.pth'
+            if not os.path.isfile(file):
+                self.download()
         if file:
             print('Loading checkpoint from: ' + file)
             checkpoint = torch.load(file)

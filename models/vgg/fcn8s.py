@@ -1,7 +1,20 @@
 import torch.nn as nn
-
+import fcn
+import os
 
 class FCN(nn.Module):
+
+    pretrained_model = os.path.expanduser(
+        os.getcwd() + '/data/pretrained_models/fcn8s_from_caffe.pth')
+
+    @classmethod
+    def download(cls):
+        return fcn.data.cached_download(
+            url='http://drive.google.com/uc?id=0B9P1L--7Wd2vT0FtdThWREhjNkU',
+            path=cls.pretrained_model,
+            md5='dbd9bbb3829a3184913bccc74373afbb',
+    )
+
     def __init__(self, n_class=21):
         super(FCN, self).__init__()
         # conv1
@@ -233,6 +246,8 @@ class FCN(nn.Module):
         import torch
         if test and not file:
             file = 'data/pretrained_models/fcn8s_from_caffe.pth'
+            if not os.path.isfile(file):
+                self.download()
         if file:
             print('Loading checkpoint from: ' + file)
             checkpoint = torch.load(file)
