@@ -14,15 +14,15 @@ PyTorch implementation of [Fully Convolutional Networks](https://github.com/shel
 `pip install -r requirements.txt`
 
 ## Data
-`sh download.sh` will download the PascalVOC dataset inside *data* folder. 
+`sh download.sh` will download the PascalVOC dataset inside **data** folder. 
 
 ## Training
 
 `python main.py --gpu_id=0 --backbone=vgg --fcn=32s --root_dataset=./data/Pascal_VOC --mode=train`
-- **backbone**: vgg or resnet.
-- **fcn**: 32s, 16s, 8s for vgg, and 101, 50 for resnet.
-- **mode**: train, val, demo.
-- **resume** = ''. For *val* and *demo*, if no resume path is given, code will use original FCN pre-trained weights.
+- **backbone**: vgg or resnet [*vgg default*].
+- **fcn**: 32s, 16s, 8s for vgg, and 101, 50 for resnet [*32s default*].
+- **mode**: train, val, demo [*train default*].
+- **resume**: For *val* and *demo*, if no resume path is given, code will use original FCN pre-trained weights.
 
 ### Acknowledgement
 This repo is built upon [wkentaro](https://github.com/wkentaro/pytorch-fcn)'s code and some snippets can be just a mirror.
