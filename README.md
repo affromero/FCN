@@ -22,6 +22,7 @@ PyTorch implementation of [Fully Convolutional Networks](https://github.com/shel
 - **backbone**: vgg or resnet [*vgg default*].
 - **fcn**: 32s, 16s, 8s for vgg, and 101, 50 for resnet [*32s default*].
 - **mode**: train, val, demo [*train default*].
+- **gpu_id**: [*-1 default* (cpu)].
 - **resume**: For *val* and *demo*, if no resume path is given, code will use original FCN pre-trained weights.
 
 ### Acknowledgement
